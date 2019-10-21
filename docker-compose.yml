@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  proxy:
+    build: .
+    image: decentralize/caching-proxy
+    environment:
+      UPSTREAM: http://example.com
+      MAX_SIZE: 500m
+    ports:
+      - 8088:80/tcp
