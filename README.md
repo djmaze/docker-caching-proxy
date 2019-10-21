@@ -1,6 +1,6 @@
 # Caching proxy docker image
 [![Docker Pulls](https://img.shields.io/docker/pulls/decentralize/caching-proxy.svg)](https://hub.docker.com/r/decentralize/caching-proxy)
-[![Build Status](https://ci.strahlungsfrei.de/api/badges/djmaze/caching-proxy/status.svg)](https://ci.strahlungsfrei.de/djmaze/caching-proxy)
+[![Build Status](https://ci.strahlungsfrei.de/api/badges/djmaze/docker-caching-proxy/status.svg)](https://ci.strahlungsfrei.de/djmaze/docker-caching-proxy)
 
 Front your webserver containers with a transparent cache.
 
