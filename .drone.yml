@@ -31,7 +31,7 @@ platform:
 
 steps:
   - name: build
-    image: plugins/docker
+    image: plugins/docker:linux-arm
     settings:
       auto_tag: true
       auto_tag_suffix: arm
