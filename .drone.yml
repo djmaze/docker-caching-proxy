@@ -27,7 +27,7 @@ type: docker
 name: arm
 
 platform:
-  arch: arm
+  arch: arm64
 
 steps:
   - name: build
