@@ -14,6 +14,7 @@ The container needs two environment variables:
 
 * `UPSTREAM`: URL of the upstream service which should be cached
 * `MAX_SIZE`: Size of the cache to use (on-disk)
+* `GZIP`: Set to `off` in order to disable gzip compression (enabled by default)
 
 The server will be listening on port 80.
 
