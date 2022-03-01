@@ -7,6 +7,6 @@ services:
     environment:
       UPSTREAM: http://example.com
       MAX_SIZE: 500m
-      ALLOWED_ORIGIN: example.com
+      ALLOWED_ORIGIN: https://example.com
     ports:
       - 8088:80/tcp

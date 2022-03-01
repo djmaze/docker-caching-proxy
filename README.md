@@ -13,6 +13,7 @@ This image runs an nginx server as a caching reverse proxy for a given URL. It c
 The container needs two environment variables:
 
 * `UPSTREAM`: URL of the upstream service which should be cached
+* `ALLOWED_ORIGIN`: origin URL which is allowed to load the files from this server (header `Access-Control-Allowed-Origins`) (default `*`)
 * `MAX_SIZE`: Size of the cache to use (on-disk)
 * `GZIP`: Set to `off` in order to disable gzip compression (enabled by default)
 
