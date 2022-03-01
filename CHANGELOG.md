@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.3.1](https://github.com/djmaze/docker-caching-proxy/tree/0.3.1) (2022-03-01)
+[Full Changelog](https://github.com/djmaze/docker-caching-proxy/compare/0.3.0...0.3.1)
+
+**Fixed bugs:**
+
+- Fix sed escaping if variables contain slashes [\#3](https://github.com/djmaze/docker-caching-proxy/pull/3) ([djmaze](https://github.com/djmaze))
+
 ## [0.3.0](https://github.com/djmaze/docker-caching-proxy/tree/0.3.0) (2022-03-01)
 [Full Changelog](https://github.com/djmaze/docker-caching-proxy/compare/0.2.0...0.3.0)
 
