@@ -18,6 +18,7 @@ The container needs two environment variables:
 * `MAX_SIZE`: Size of the cache to use (on-disk)
 * `GZIP`: Set to `off` in order to disable gzip compression (enabled by default)
 * `PROXY_READ_TIMEOUT`: Set the timeout for reading a response from the proxied server (default: 120s)
+* `PROXY_CACHE_VALID`: Set caching time for 200, 301, and 302 responses (disabled by default)
 
 The server will be listening on port 80.
 
