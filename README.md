@@ -1,4 +1,5 @@
 # Caching proxy docker image
+
 [![Docker Pulls](https://img.shields.io/docker/pulls/decentralize/caching-proxy.svg)](https://hub.docker.com/r/decentralize/caching-proxy)
 [![Build Status](https://ci.strahlungsfrei.de/api/badges/djmaze/docker-caching-proxy/status.svg)](https://ci.strahlungsfrei.de/djmaze/docker-caching-proxy)
 
@@ -16,6 +17,7 @@ The container needs two environment variables:
 * `ALLOWED_ORIGIN`: origin URL which is allowed to load the files from this server (header `Access-Control-Allowed-Origins`) (default `*`)
 * `MAX_SIZE`: Size of the cache to use (on-disk)
 * `GZIP`: Set to `off` in order to disable gzip compression (enabled by default)
+* `PROXY_READ_TIMEOUT`: Set the timeout for reading a response from the proxied server (default: 120s)
 
 The server will be listening on port 80.
 
