@@ -12,4 +12,7 @@ if [[ "${PROXY_CACHE_VALID+x}" ]]; then
 fi
 sed -i "s|\$PROXY_CACHE_VALID|${PROXY_CACHE_VALID-}|" /etc/nginx/nginx.conf
 
+export NAMESERVER=`cat /etc/resolv.conf | grep "nameserver" | awk '{print $2}' | tr '\n' ' '`
+sed -i "s|\$NAMESERVER|${NAMESERVER}|" /etc/nginx/nginx.conf
+
 exec "$@"
