@@ -16,6 +16,7 @@ The container needs two environment variables:
 * `UPSTREAM`: URL of the upstream service which should be cached
 * `ALLOWED_ORIGIN`: origin URL which is allowed to load the files from this server (header `Access-Control-Allowed-Origins`) (default `*`)
 * `MAX_SIZE`: Size of the cache to use (on-disk)
+* `MAX_INACTIVE`: Maximum inactive time for cached items (default: 60m)
 * `GZIP`: Set to `off` in order to disable gzip compression (enabled by default)
 * `PROXY_READ_TIMEOUT`: Set the timeout for reading a response from the proxied server (default: 120s)
 * `PROXY_CACHE_VALID`: Set caching time for 200, 301, and 302 responses (disabled by default)
