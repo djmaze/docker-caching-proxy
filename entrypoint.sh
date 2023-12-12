@@ -2,6 +2,7 @@
 set -euo pipefail
 
 sed -i "s|\$MAX_SIZE|${MAX_SIZE:-10g}|" /etc/nginx/nginx.conf
+sed -i "s|\$MAX_INACTIVE|${MAX_INACTIVE:-60m}|" /etc/nginx/nginx.conf
 sed -i "s|\$UPSTREAM|${UPSTREAM}|" /etc/nginx/nginx.conf
 sed -i "s|\$GZIP|${GZIP:-on}|" /etc/nginx/nginx.conf
 sed -i "s|\$ALLOWED_ORIGIN|${ALLOWED_ORIGIN:-*}|" /etc/nginx/nginx.conf
